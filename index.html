@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Free, fast everyday calculators and converters. Calculate percentages, tips, loan payments, compound interest, and more.">
+  <meta name="theme-color" content="#101827">
+  <title>QuickKit — Free Everyday Online Tools</title>
+  <style>
+    :root{--ink:#172033;--muted:#667085;--line:#e6eaf0;--paper:#f6f8fb;--brand:#5267e8;--brand2:#3448c5;--green:#16845b}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}
+    header{background:#101827;color:white;padding:17px 0}.nav{display:flex;align-items:center;justify-content:space-between;gap:18px}.logo{font-weight:850;font-size:1.25rem;letter-spacing:-.04em}.logo b{color:#93a2ff}.navlinks{display:flex;gap:22px;color:#d6dbea;font-size:.92rem}
+    .hero{background:radial-gradient(ellipse at 80% 0%,#35468f 0%,transparent 40%),#101827;color:white;padding:66px 0 72px}.hero-inner{max-width:760px}.eyebrow{color:#aebaff;font-size:.78rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}.hero h1{font-size:clamp(2.35rem,6vw,4.35rem);line-height:1.04;letter-spacing:-.055em;margin:13px 0 18px}.hero p{color:#cbd3e5;max-width:650px;font-size:1.1rem;margin:0 0 27px}.search{display:flex;max-width:590px;background:white;border-radius:13px;padding:6px;box-shadow:0 12px 35px #0003}.search input{flex:1;min-width:0;border:0;outline:0;padding:12px 14px;font:inherit;color:var(--ink)}.search button{border:0;background:var(--brand);color:white;border-radius:9px;padding:0 18px;font-weight:700;cursor:pointer}
+    main{padding:42px 0 65px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:19px}.section-head h2{font-size:1.55rem;letter-spacing:-.035em;margin:0}.section-head p{color:var(--muted);margin:3px 0 0;font-size:.94rem}
+    .ad-slot{border:1px dashed #c7ceda;border-radius:12px;min-height:92px;display:grid;place-items:center;text-align:center;color:#8992a3;background:#fbfcfe;margin:24px 0;font-size:.82rem}.ad-slot small{display:block}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.tool{background:white;border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 3px 12px #17203308;transition:.18s}.tool:hover{transform:translateY(-2px);box-shadow:0 10px 28px #17203312}.tool .icon{width:42px;height:42px;border-radius:12px;background:#eef0ff;display:grid;place-items:center;font-size:1.25rem;margin-bottom:13px}.tool h3{margin:0 0 5px;font-size:1.08rem}.tool p{margin:0;color:var(--muted);font-size:.9rem}.tool button{margin-top:16px;background:#f0f2ff;color:var(--brand2);border:0;padding:9px 13px;border-radius:9px;font-weight:750;cursor:pointer}
+    .panel{background:white;border:1px solid var(--line);border-radius:18px;padding:24px;margin-top:30px}.panel h2{margin:0 0 5px;letter-spacing:-.03em}.panel>p{margin:0 0 20px;color:var(--muted)}.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field label{display:block;font-size:.86rem;font-weight:700;margin-bottom:6px}.field input,.field select{width:100%;border:1px solid #d9deea;border-radius:10px;padding:12px;font:inherit;background:white}.calc-actions{display:flex;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap}.primary{background:var(--brand);color:white;border:0;border-radius:10px;padding:12px 18px;font-weight:750;cursor:pointer}.result{background:#f0f8f4;color:#126746;border-radius:11px;padding:13px 15px;font-weight:750;min-height:48px;flex:1}.hidden{display:none!important}
+    .how{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}.how article{padding:17px 0}.how strong{display:block;margin-bottom:5px}.how p{margin:0;color:var(--muted);font-size:.92rem}
+    footer{background:#101827;color:#cbd3e5;padding:32px 0}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot small{color:#9aa6bf}.foot a{color:#dce2f3;text-decoration:underline;text-underline-offset:3px}
+    @media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.how{grid-template-columns:1fr}.navlinks{gap:12px}}@media(max-width:540px){.grid{grid-template-columns:1fr}.hero{padding:48px 0 55px}.navlinks a:nth-child(2){display:none}.calc-grid{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}}
+  </style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="logo" href="#">Quick<b>Kit</b></a><nav class="navlinks"><a href="#tools">Free tools</a><a href="#about">About</a><a href="#privacy">Privacy</a></nav></div></header>
+<section class="hero"><div class="wrap hero-inner"><div class="eyebrow">Free tools. No sign-up.</div><h1>Small tasks.<br>Made simpler.</h1><p>Quick, practical calculators and converters for everyday decisions. No account, no downloads, and your calculations stay in your browser.</p><form class="search" id="searchForm"><input id="searchInput" aria-label="Search tools" placeholder="Search calculators and tools…"><button>Find a tool</button></form></div></section>
+<main class="wrap">
+  <div class="ad-slot" aria-label="Advertising space"><div>Advertisement area<small>Ad network code can be added here after your site is approved.</small></div></div>
+  <section id="tools"><div class="section-head"><div><h2>Popular free tools</h2><p>Choose a tool to get started.</p></div></div>
+    <div class="grid" id="toolGrid">
+      <article class="tool" data-name="percentage calculator"><div class="icon">％</div><h3>Percentage calculator</h3><p>Find a percentage of a number or compare two values.</p><button data-calc="percent">Open calculator →</button></article>
+      <article class="tool" data-name="tip calculator"><div class="icon">🧾</div><h3>Tip calculator</h3><p>Work out a tip and split a bill between people.</p><button data-calc="tip">Open calculator →</button></article>
+      <article class="tool" data-name="loan payment calculator"><div class="icon">🏠</div><h3>Loan payment calculator</h3><p>Estimate monthly principal and interest payments.</p><button data-calc="loan">Open calculator →</button></article>
+      <article class="tool" data-name="compound interest calculator"><div class="icon">📈</div><h3>Compound interest</h3><p>See how savings may grow over time.</p><button data-calc="interest">Open calculator →</button></article>
+      <article class="tool" data-name="discount calculator"><div class="icon">🏷️</div><h3>Discount calculator</h3><p>Find the sale price after a percentage discount.</p><button data-calc="discount">Open calculator →</button></article>
+      <article class="tool" data-name="unit converter"><div class="icon">↔️</div><h3>Length converter</h3><p>Convert inches, feet, centimeters, and meters.</p><button data-calc="length">Open calculator →</button></article>
+    </div>
+  </section>
+  <section class="panel hidden" id="calculator" aria-live="polite"><h2 id="calcTitle">Calculator</h2><p id="calcDesc"></p><div id="calcFields" class="calc-grid"></div><div class="calc-actions"><button class="primary" id="calculate">Calculate</button><div class="result" id="result">Your result will appear here.</div></div></section>
+  <div class="ad-slot"><div>Advertisement area<small>Keep ads clearly separated from tool controls and content.</small></div></div>
+  <section id="about"><div class="section-head"><div><h2>Useful answers, without the hassle</h2><p>QuickKit is designed to make everyday math and conversions easier.</p></div></div><div class="how"><article><strong>1. Pick a tool</strong><p>Choose the calculator that matches what you need.</p></article><article><strong>2. Enter your numbers</strong><p>Calculations happen locally in your browser. No account is needed.</p></article><article><strong>3. Get your answer</strong><p>See a clear estimate you can use as a starting point.</p></article></div></section>
+  <section id="privacy" class="panel"><h2>Privacy & important information</h2><p>QuickKit's calculators run in your browser and this starter version does not ask for personal information or send calculation inputs to a server. Loan and interest results are estimates, not financial advice. If advertising or analytics services are added, update this notice to explain the providers, cookies, data collection, and user choices before launch.</p></section>
+</main>
+<footer><div class="wrap foot"><div><strong>QuickKit</strong><br><small>Free everyday online tools.</small></div><small>© <span id="year"></span> QuickKit. Check calculations before making important decisions.</small></div></footer>
+<script>
+const $=s=>document.querySelector(s), fields=$('#calcFields'), panel=$('#calculator');
+const configs={
+ percent:{title:'Percentage calculator',desc:'What is X percent of Y?',inputs:[['Percent','percent',10],['Number','number',200]],run:v=>`${v[0]}% of ${v[1]} = ${fmt(v[0]*v[1]/100)}`},
+ tip:{title:'Tip calculator',desc:'Calculate a tip and split the total.',inputs:[['Bill amount ($)','bill',50],['Tip (%)','tip',18],['People','people',2]],run:v=>{let t=v[0]*v[1]/100;return `Tip: ${money(t)} · Total: ${money(v[0]+t)} · Each: ${money((v[0]+t)/Math.max(1,Math.floor(v[2])))}`}},
+ loan:{title:'Loan payment calculator',desc:'Monthly estimate using a fixed interest rate; excludes taxes and fees.',inputs:[['Loan amount ($)','amount',200000],['Annual interest (%)','rate',6.5],['Term (years)','years',30]],run:v=>{let n=v[2]*12,r=v[1]/1200,p=r===0?v[0]/n:v[0]*r/(1-Math.pow(1+r,-n));return `Estimated monthly payment: ${money(p)}`}},
+ interest:{title:'Compound interest calculator',desc:'Estimate growth with monthly compounding and no additional deposits.',inputs:[['Starting amount ($)','principal',1000],['Annual return (%)','rate',5],['Years','years',10]],run:v=>{let total=v[0]*Math.pow(1+v[1]/1200,v[2]*12);return `Estimated future value: ${money(total)} · Growth: ${money(total-v[0])}`}},
+ discount:{title:'Discount calculator',desc:'Find the price after a percentage discount.',inputs:[['Original price ($)','price',80],['Discount (%)','discount',25]],run:v=>{let sale=v[0]*(1-v[1]/100);return `Sale price: ${money(sale)} · You save: ${money(v[0]-sale)}`}},
+ length:{title:'Length converter',desc:'Convert a length between common units.',inputs:[['Value','value',12]],select:true,run:(v,unit)=>{let inches=v[0]*({in:1,ft:12,cm:1/2.54,m:39.3700787}[unit]);return `${fmt(inches)} inches · ${fmt(inches/12)} feet · ${fmt(inches*2.54)} cm · ${fmt(inches/39.3700787)} meters`}}
+};
+let active='percent';
+function fmt(n){return Number.isFinite(n)?n.toLocaleString(undefined,{maximumFractionDigits:2}):'—'}
+function money(n){return '$'+fmt(n)}
+function openCalc(key){active=key;let c=configs[key];$('#calcTitle').textContent=c.title;$('#calcDesc').textContent=c.desc;fields.innerHTML=c.inputs.map(([label,name,value])=>`<div class="field"><label for="${name}">${label}</label><input id="${name}" name="${name}" type="number" step="any" value="${value}"></div>`).join('')+(c.select?'<div class="field"><label for="unit">Input unit</label><select id="unit"><option value="in">Inches</option><option value="ft">Feet</option><option value="cm">Centimeters</option><option value="m">Meters</option></select></div>':'');$('#result').textContent='Your result will appear here.';panel.classList.remove('hidden');panel.scrollIntoView({behavior:'smooth',block:'start'})}
+$('#toolGrid').addEventListener('click',e=>{let b=e.target.closest('button[data-calc]');if(b)openCalc(b.dataset.calc)});
+$('#calculate').addEventListener('click',()=>{let c=configs[active],v=c.inputs.map(x=>Number($('#'+x[1]).value));if(v.some(x=>!Number.isFinite(x))){$('#result').textContent='Please enter valid numbers.';return}if(active==='tip'&&v[2]<1){$('#result').textContent='Enter at least one person.';return}if(active==='loan'&&(v[0]<=0||v[2]<=0||v[1]<0)){ $('#result').textContent='Enter a positive amount and term, and a non-negative rate.';return}if(active==='interest'&&(v[0]<0||v[2]<0||v[1]<-1200)){ $('#result').textContent='Please check your values.';return}$('#result').textContent=c.run(v,$('#unit')?.value)});
+$('#searchForm').addEventListener('submit',e=>{e.preventDefault();let q=$('#searchInput').value.toLowerCase().trim(),cards=[...document.querySelectorAll('.tool')];cards.forEach(c=>c.classList.toggle('hidden',q&&!c.dataset.name.includes(q)));$('#tools').scrollIntoView({behavior:'smooth'})});
+$('#year').textContent=new Date().getFullYear();
+</script>
+</body></html>
